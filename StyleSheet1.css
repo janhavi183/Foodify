@@ -1,0 +1,330 @@
+﻿.b { /*
+    background-color: #2d3436;
+    border: none;
+    color: white;
+    padding: 4px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    float: left;
+    width: 200px;*/
+    background: linear-gradient( 135deg, #753370 0%, #298096 100%);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 2px;
+    width: 200px;
+    letter-spacing: .11rem;
+    outline: none;
+}
+    .b:hover {
+        transform: scale(1.05) translateY(-3px);
+        box-shadow: 3px 3px 6px #38373785;
+        /*background-color: white;
+        color: #466d78;*/
+    }
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainscreen {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #DFDBE5;
+    background-image: url("https://wallpaperaccess.com/full/3063067.png");
+    color: #963E7B;
+}
+
+input[type="submit"].b1 {
+    background: linear-gradient( 135deg, #753370 0%, #298096 100%);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 2px;
+    width: 200px;
+    letter-spacing: .11rem;
+    outline: none;
+    float: right;
+    /*background-color: #2d3436;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    float: right;
+    padding: 4px 4px;*/
+}
+
+    input[type="submit"].b1:hover {
+        transform: scale(1.05) translateY(-3px);
+        box-shadow: 3px 3px 6px #38373785;
+       /* background-color: white;
+        color: #00ccff;*/
+    }
+
+/*body {
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+}*/
+
+.row {
+    height: 20px;
+    width: 34%;
+    color: white;
+    border: transparent;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 300;
+    font-size: 1.0rem;
+}
+.title {
+    
+    height: 20px;
+    width: 34%;
+    color: white;
+    border: transparent;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 300;
+    font-size: 2.5rem;
+
+}
+
+.gridview {
+    width: 100%;
+    height: 100%;
+    padding-top: 20%;
+    border: 2px;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 300;
+    font-size: 1.0rem;
+}
+
+.gridview1 {
+    width: 100%;
+    height: 80%;
+    padding-top: 20%;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 300;
+    font-size: 1.0rem;
+}
+
+
+.header {
+    font-size: 16px;
+    background: #E9E9E9;
+    color: black;
+    height: 40px;
+    width: 100%;
+}
+
+.button {
+    
+    border: none;
+    color: black;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 1px;
+    cursor: pointer;
+}
+.button3 {
+    background-color: #00b712;
+    background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+    /* background: linear-gradient( 135deg, #753370 0%, #298096 100%);*/
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 2px;
+    width: 200px;
+    letter-spacing: .11rem;
+    outline: none;
+    /*background-color: #3DFF33;
+    border: transparent;
+    color: #2c3338;
+    outline-style: none;*/
+}
+
+    .button3:hover {
+        transform: scale(1.05) translateY(-3px);
+        box-shadow: 3px 3px 6px #38373785;
+        /*background-color: white;
+        color: #2c3338;*/
+    }
+
+
+.button2 {
+    background-color: #00b712;
+    background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+    /* background: linear-gradient( 135deg, #753370 0%, #298096 100%);*/
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 2px;
+    width: 220px;
+    letter-spacing: .11rem;
+    outline: none;
+    /*background-color: #3DFF33;
+	border-radius: 4px;*/
+}
+
+.b4{
+    background-color:#00ccff;
+	border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: center;
+    width:16.66%;
+    
+}
+.b4:hover {
+	background-color:white;
+	color:#466d78;
+}
+
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.form__field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.form__input {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+		  outline:none;
+		  
+}
+
+.form input[type="password"], .form input[type="text"], .form input[type="submit"] {
+  width: 100%;
+  background-color:#595959;
+  outline:none;
+  
+  }
+  
+  [class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  
+}
+
+.dropbtn {
+    background: linear-gradient( 135deg, #753370 0%, #298096 100%);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 2px;
+    width: 200px;
+    letter-spacing: .11rem;
+    outline: none;
+    /*background-color:#00ccff;
+    text-align: center;
+    text-decoration: none;
+	display: inline-block;
+    color: black;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: 1px solid black;
+    cursor: pointer;*/
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #e6e6e6}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3DFF33;
+}
+/* Navigation */
+navbar {
+    flex-direction: column;
+}
+
+navbar ul li a {
+        font-size: 1rem;
+        padding: 0px 7px;
+        padding-bottom: 8px;
+    }
+/* Home section */
+home {
+    height: 370px;
+    padding: 3px 28px;
+}
+
+home::before {
+        height: 480px;
+    }
+
+home p {
+        font-size: 13px;
+    }

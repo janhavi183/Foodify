@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="OFOS.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+    <link href="~/StyleSheet1.css" rel="stylesheet" type="text/css" runat="server" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="mainscreen">
+    <form id="form1" runat="server">
+   
+        <table style="width: 100%">
+            <tr>
+                <td style="width: 20%; height: 90px; vertical-align: top; display:inline-flex;">
+                    <a href="Hotel.aspx"><asp:Image id="logo" runat="server" Width="100px" Height="100px"/></a>
+                    <h1><asp:label id="lblfoodify" runat="server" text="&nbsp&nbspFoodify" cssclass="title"></asp:label></h1>
+                </td>
+
+                <%--<td style="width: 10%; height: 90px; vertical-align: top;">
+                    <h1><asp:label id="lblfoodify" runat="server" text="foodify" cssclass="b1"></asp:label></h1>
+                </td>--%>
+                <nav id="navbar">
+                <td style="width: 80%; vertical-align: top;">
+                    <asp:Button CssClass="b1" Text="Sign out" ID="b" runat="server" OnClick="LogOut_click" CausesValidation="false" />
+                    <asp:Button CssClass="b1" Text="Thank You!" ID="b1" runat="server" OnClick="LogOut_click" />
+
+                    <div class="dropdown" runat="server" visible="false" id="dropdown" style="float: right">
+                        <button class="dropbtn">
+                            <asp:Label Style="float: right; color: white" ID="u" runat="server" Font-Bold="true" />
+                            <asp:Label ID="h" Style="float: right; color: white" Text="Hello&nbsp" runat="server" Font-Bold="true" />
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="HotelMyAccount.aspx">My Account</a>
+                            <a href="HotelArchiveOrders.aspx">Track Order</a>
+                          
+                        </div>
+                    </div>
+
+                    <asp:Button CssClass="b1" ID="my_order" Text="My Order" OnClick="MyOrder_click" runat="server" Visible="false" />
+                    <asp:Button CssClass="b1" ID="hl" Text="Sign in" OnClick="signin_click" runat="server" CausesValidation="false" />
+                    <asp:Button ID="Register" runat="server" Text="Register" Visible="false" CssClass="b1" OnClick="Register_Click"  CausesValidation="false"/>
+   
+                    <h2>
+                        <asp:Label Style="float: right; color: black; margin-right: 30px;" ID="Label1" runat="server" Font-Bold="true" Visible="false" />
+                        <asp:Label ID="Label2" Style="float: right; color: black" Text="Hello&nbsp" runat="server" Font-Bold="true" Visible="false" />
+                    </h2>
+                </td>
+                 </nav>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                </td>
+            </tr>
+        </table>
+
+    </form>
+    </div>
+</body>
+</html>
